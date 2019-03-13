@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FuelConsumptionController@index');
+Route::get('/validateForm', 'FuelConsumptionController@validateForm()');
+Route::get('/calculateFuelConsumption', 'FuelConsumption@calculateFuelConsumption()');
