@@ -8,7 +8,7 @@ class FuelConsumptionController extends Controller
 {
     public function index()
     {
-        return "Show the form";
+       return view('fuelConsumptionCalculator.show');
     }
 
     public function validateForm()
@@ -20,4 +20,5 @@ class FuelConsumptionController extends Controller
     {
 
     }
+
 }

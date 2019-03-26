@@ -1,0 +1,112 @@
+.content {
+    width: 50%;
+    margin: auto;
+    padding-left: 7px;
+    height: 100%;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 24px;
+    color: gray;
+    text-align: center;
+}
+
+.subHeader {
+    margin-left: 20px;
+}
+
+td {
+    font-size: 11pt;
+    padding: 3px
+}
+
+.leftTD {
+    width: 60%;
+}
+
+.rightTD {
+    width: 40%;
+}
+
+ol {
+    margin-left: 0px;
+    font-size: 14pt;
+}
+
+li {
+    margin-left: 15px;
+    font-size: 11pt;
+}
+
+.attention {
+    color: red;
+    font-style: italic;
+    font-size: 8pt;
+    margin-top: 2px;
+}
+
+.leftTD > .attention {
+    text-align: left;
+    margin-left: 200px;
+    vertical-align: top;
+}
+
+.rightTD > .attention {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.buttonTD {
+    text-align: center;
+}
+
+.note {
+    font-style: italic;
+    font-size: 9pt;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+#formTable {
+    border-radius: 1em;
+    border: 1px solid grey;
+    background-color: #f3f3f3;
+    padding: 10px 0px 5px 10px;
+    border-spacing: 4px 4px;
+    width: 100%;
+}
+
+input {
+    border-radius: 1px;
+    text-align: right;
+    padding-left: 7px;
+}
+
+input[type=submit] {
+    border: 1px gray solid;
+    border-radius: 1em;
+    background-color: lightgrey;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 6px 3px;
+    cursor: pointer;
+}
+
+.calculationResult {
+    color: gray;
+    background-color: white;
+    border: 1px gray solid;
+    padding: 5px;
+    width: 300px;
+    margin: 7px auto;
+    text-align: center;
+}
+
+.alert {
+    color: red;
+    font-size: 10pt;
+    margin-left: 10px;
+    padding-top: 10px;
+}
