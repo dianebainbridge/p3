@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Fuel Consumption Calculator'),
 
     /*
     |--------------------------------------------------------------------------
@@ -227,5 +227,25 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    /*
+   |--------------------------------------------------------------------------
+   | Menu/Navigation
+   |--------------------------------------------------------------------------
+   |Menus tabs are entered here route => link text
+   |
+   */
 
+    'nav' => [
+        'about' => 'About',
+        'fuelConsumptionCalculator/get-fuel-log' => 'View Log',
+        'contact' => 'Contact',
+    ],
+    /*
+  |--------------------------------------------------------------------------
+  | Github link
+  |--------------------------------------------------------------------------
+  |A link to the projects github repository
+  |
+  */
+    'githubUrl' => 'https://github.com/dianebainbridge/p3',
 ];

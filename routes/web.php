@@ -1,18 +1,26 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+ * Misc "static" pages
+ */
+Route::view('/about','about');
+Route::view('/contact','contact');
 Route::get('/', 'FuelConsumptionController@index');
-Route::get('/validateForm', 'FuelConsumptionController@validateForm()');
-Route::get('/calculateFuelConsumption', 'FuelConsumption@calculateFuelConsumption()');
+/*
+ * Fuel Consumption Calculator
+ */
+#Show the form and log
+Route::view('/viewLog','fuelConsumptionCalculator.viewLog');
+Route::view('/form','fuelConsumptionCalculator.form');
+
+#Process the form
+Route::get('/fuelConsumptionCalculator/form-process', 'FuelConsumptionController@formProcess');
+# Show the  form
+Route::get('/fuelConsumptionCalculator/show-form', 'FuelConsumptionController@showForm');
+#get the fuel Log
+Route::get('/fuelConsumptionCalculator/get-fuel-log', 'FuelConsumptionController@getFuelLog');
+
+
+
 
 
