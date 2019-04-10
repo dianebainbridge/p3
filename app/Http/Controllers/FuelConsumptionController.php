@@ -77,7 +77,7 @@ class FuelConsumptionController extends Controller
             }
             #create a fuelID for this user and set cookie
             else {
-                $fuelCalcID = "8";
+                $fuelCalcID = uniqid();
                 setcookie("fuelCalcID", $fuelCalcID, time() + 180 * 24 * 60 * 60, "/", ".p3.dianebainbridge.com");
             }
             $fuelConsumption = $fuelConsumed . " " . $distanceUnit . " / " . $volumeUnit;
