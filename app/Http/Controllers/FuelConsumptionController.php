@@ -99,7 +99,7 @@ class FuelConsumptionController extends Controller
         # Redirect the user page to the page that shows the form
         return redirect('/fuelConsumptionCalculator/show-form')->with([
             'fuelConsumed' => $fuelConsumed,
-            'startDistance' => $startDistance,a
+            'startDistance' => $startDistance,
             'endDistance' => $endDistance,
             'fuelVolume' => $fuelVolume,
             'distanceUnit' => $request->get('distanceUnit'),
