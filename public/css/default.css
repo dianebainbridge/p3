@@ -1,45 +1,54 @@
 body {
     font-family: Arial;
-    font-size:12pt;
+    font-size: 12pt;
 
 }
+
 .active {
     color: #337ab7 !important;
-    font-weight:bold;
-    vertical-align:bottom !important;
-    padding:15px 15px;
+    font-weight: bold;
+    vertical-align: bottom !important;
+    padding: 15px 15px;
 }
-.navbar-default .navbar-nav>li>a:hover {
+
+.navbar-default .navbar-nav > li > a:hover {
     color: #b82e8a !important;
-    font-weight:bold;
+    font-weight: bold;
 }
-nav{
-    font-size:13pt
+
+nav {
+    font-size: 13pt
 }
+
 footer {
-    text-align:center;
-    font-size:14pt;
-    padding-top:15px;
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 15px;
 }
+
 #pageTitle {
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 #main {
-    padding-left:20px;
+    padding-left: 20px;
     font-family: Arial;
-    color:dimgray;
-    font-size:13pt;
-    padding-right: 30px;
-    min-height:400px;
+    color: dimgray;
+    font-size: 13pt;
+    padding-right: 20px;
+    min-height: 400px;
 }
+
 h2 {
-    font-size:15pt;
+    font-size: 15pt;
     color: #337ab7 !important;
 }
+
 hr {
 
 }
-.error {
-    color:#b82e8a;
+
+.outcome {
+    color: #b82e8a;
 }
 
