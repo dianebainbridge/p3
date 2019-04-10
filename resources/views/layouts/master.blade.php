@@ -11,43 +11,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href='/css/default.css' rel='stylesheet'>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
     @yield('head')
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/#"><i class="fas fa-gas-pump"></i>&#160;{{ config('app.name') }}</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <!--loop code from Susan Buck foobooks application-->
-                    @foreach(config('app.nav') as $link => $label)
-                        <li
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/#"><i class="fas fa-gas-pump"></i>&#160;{{ config('app.name') }}</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <!--loop code from Susan Buck foobooks application-->
+                @foreach(config('app.nav') as $link => $label)
+                    <li
                             {{-- If the current path is the same as this link, display as plain text, not a hyperlink--}}
                             @if(Request::is($link))
-                                class='active' >{{ $label }}
-                                {{-- Otherwise, display as a hyerlink --}}
-                            @else
-                                ><a href='/{{ $link }}'>{{ $label }}</a>
-                            @endif
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id='pageTitle'>
-        @yield('pageTitle')
-    </section>
-    <hr/>
-    <section id='main'>
-        @yield('content')
-    </section>
+                            class='active'>{{ $label }}
+                        {{-- Otherwise, display as a hyerlink --}}
+                        @else
+                            ><a href='/{{ $link }}'>{{ $label }}</a>
+                        @endif
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </nav>
+</header>
+<section id='pageTitle'>
+    @yield('pageTitle')
+</section>
+<hr/>
+<section id='main'>
+    @yield('content')
+</section>
 <hr/>
 <footer>
     <a href='{{ config('app.githubUrl') }}'><i class='fab fa-github'></i> View p3 on Github</a>

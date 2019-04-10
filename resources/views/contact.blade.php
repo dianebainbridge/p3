@@ -5,5 +5,6 @@
 @endsection
 
 @section('content')
-    <i class="far fa-envelope"></i>&#160;<a href="mailto:{{ config('mail.supportEmail') }}">{{ config('app.name')}}Support</a>
+    <i class="far fa-envelope"></i>&#160;<a href="mailto:{{ config('mail.supportEmail') }}">{{ config('app.name')}}
+        Support</a>
 @endsection

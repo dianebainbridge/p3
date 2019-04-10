@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    <table id="table" class="table table-striped table-bordered table-hover table-condensed" width:75%%>
+    <table id="table" class="table table-striped table-bordered table-hover table-condensed" width:75%">
         <thead>
         <tr>
             <th data-field="date">Date</th>
@@ -19,14 +19,14 @@
         <tbody>
         @if(!empty($fuelLog))
             @foreach($fuelLog as $logEntry)
-                <tr >
+                <tr>
                     <td>{{ $logEntry['date']}}</td>
                     <td>{{ $logEntry['distance'] }}</td>
                     <td>{{ $logEntry['fuel']}}</td>
                     <td>{{ $logEntry['fuelConsumption'] }}</td>
                 </tr>
             @endforeach
-         @endif
+        @endif
         </tbody>
     </table>
 @endsection
