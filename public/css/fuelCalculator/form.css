@@ -1,7 +1,4 @@
 form {
-    background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
     margin: auto;
     position: relative;
     font-family: Arial;
@@ -11,40 +8,32 @@ form {
     color: #337ab7 !important;
     text-decoration: none;
     border-radius: 10px;
-    padding: 25px;
+    padding: 25px 25px 10px 50px;
     border: 1px solid #999;
     border: 1px inset #333;
+    border-radius: 1em;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
-table {
-    border-spacing: 100px 10px;
-    border-collapse: separate;
-}
-td {
-    padding: 10px;
-}
+
 input {
-    width: 375px;
     display: block;
     border: 1px solid #999;
     height: 25px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    font-family: 'FontAwesome';
+    color: #337ab7 !important;
+    text-align:right;
 }
+
 input[type=checkbox],
-input[type=radio]{
-    width: 25px;
+input[type=radio], label {
     border: 0px solid;
     box-shadow: 0px 0px transparent;
-}
-textarea#feedback {
-    width: 375px;
-    height: 150px;
-    display: block;
+    vertical-align: top !important;
+    margin-top: 0px;
 }
 
 button {
@@ -54,10 +43,10 @@ button {
     bottom: 20px;
     background: #337ab7 !important;
     color: #fff;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Arial;
     height: 30px;
     border-radius: 15px;
-    border: 1p solid #999;
+    border: 1px solid #999;
 }
 
 input.button:hover {
