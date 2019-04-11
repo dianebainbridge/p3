@@ -113,6 +113,7 @@
                                checked="checked"
                                 @endif
                         ><b>Add to log</b>
+                        <span style="font-size:8.5pt;font-style:italic">&#160;Your data will be available for 6 months</span>
                     </label>
                 </div>
                 <div class="form-group">
