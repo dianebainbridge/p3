@@ -25,4 +25,6 @@ and a drop down for volumeUnit but I wanted to experiment with several different
 inputs for this project.
 + Because we are not using databases yet I chose to store the log data
 in a json file. 
++ I'm getting a css validator warning about a heading tag but I created a
+ separate page title section that uses the header tags.  
 
