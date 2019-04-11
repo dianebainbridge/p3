@@ -1,13 +1,18 @@
 @extends('layouts.master')
+
+@section('title')
+    View Fuel Log
+@endsection
+
 @section('head')
 @endsection
 
 @section('pageTitle')
-    <h2>View Log</h2>
+    <h2>View Fuel Log</h2>
 @endsection
 
 @section('content')
-    <table id="table" class="table table-striped table-bordered table-hover table-condensed" width:75%">
+    <table id="table" class="table table-striped table-bordered table-hover table-condensed" style=width:75%>
         <thead>
         <tr>
             <th data-field="date">Date</th>

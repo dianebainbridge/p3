@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Contact
+@endsection
+
 @section('pageTitle')
     <h2>Contact</h2>
 @endsection

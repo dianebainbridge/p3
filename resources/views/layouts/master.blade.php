@@ -42,9 +42,7 @@
 <section id='pageTitle'>
     @yield('pageTitle')
 </section>
-
 <hr/>
-
 <section id='main'>
     @yield('content')
 </section>
