@@ -38,14 +38,19 @@
         </div>
     </nav>
 </header>
+
 <section id='pageTitle'>
     @yield('pageTitle')
 </section>
+
 <hr/>
+
 <section id='main'>
     @yield('content')
 </section>
+
 <hr/>
+
 <footer>
     <a href='{{ config('app.githubUrl') }}'><i class='fab fa-github'></i> View p3 on Github</a>
 </footer>

@@ -28,6 +28,7 @@ class FuelConsumptionController extends Controller
         $distanceUnit = $request->session()->get('distanceUnit', '');
         $volumeUnit = $request->session()->get('volumeUnit', '');
         $fuelConsumed = $request->session()->get('fuelConsumed', 0);
+        $distance = $request->session()->get('distance', 0);
 
         return view('fuelConsumptionCalculator.form')->with([
             'startDistance' => $startDistance,
@@ -36,6 +37,7 @@ class FuelConsumptionController extends Controller
             'distanceUnit' => $distanceUnit,
             'volumeUnit' => $volumeUnit,
             'fuelConsumed' => $fuelConsumed,
+            'distance' => $distance,
         ]);
     }
 
@@ -111,6 +113,7 @@ class FuelConsumptionController extends Controller
         # if the user did not select add to log
         return redirect('/fuelConsumptionCalculator/show-form')->with([
             'fuelConsumed' => $fuelConsumed,
+            'distance' => $distance,
             'startDistance' => $startDistance,
             'endDistance' => $endDistance,
             'fuelVolume' => $fuelVolume,

@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title')
+    Fuel Consumption Calculator
+@endsection
 
 @section('head')
     <link href='/css/fuelCalculator/form.css' rel='stylesheet'>
@@ -47,7 +50,7 @@
                     Select miles or kilometers
                     <br/>
                     <label class="radio-inline" for="miles">
-                        <input type="radio" name="distanceUnit" value="miles"
+                        <input type="radio" name="distanceUnit" value="miles" id="miles"
                                {{-- If the old value i "miles" check this radio input--}}
                                @if (old('distanceUnit')=="miles")
                                checked="checked"
@@ -119,7 +122,9 @@
                     @if(count($errors)==0)
                         @if(!empty($fuelConsumed))
                             <p class="calculationResult">
-                                Fuel Consumed : {{$fuelConsumed}}  {{$distanceUnit}}/{{$volumeUnit}}
+                                Your traveled {{$distance}} {{$distanceUnit}} on {{$fuelVolume}} {{$volumeUnit}}s
+                                of gas since your last fillup.
+                                <br/>Fuel Consumed : {{$fuelConsumed}}  {{$distanceUnit}}/{{$volumeUnit}}
                             </p>
                         @endif
                     @else
