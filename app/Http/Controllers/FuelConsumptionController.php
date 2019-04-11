@@ -8,12 +8,12 @@ use App;
 class FuelConsumptionController extends Controller
 {
     /*
-    *  GET index
+    *   index
     */
     public function index()
     {
         #View the form
-        return view('fuelConsumptionCalculator.form');
+        return view('/fuelConsumptionCalculator.form');
     }
 
     /*

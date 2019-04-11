@@ -5,7 +5,7 @@
  */
 Route::view('/about','about');
 Route::view('/contact','contact');
-Route::get('/', 'FuelConsumptionController@index');
+Route::view('/', 'fuelConsumptionCalculator.form');
 /*
  * Fuel Consumption Calculator
  */
@@ -14,7 +14,7 @@ Route::view('/viewLog','fuelConsumptionCalculator.viewLog');
 Route::view('/form','fuelConsumptionCalculator.form');
 
 #Process the form
-Route::get('/fuelConsumptionCalculator/form-process', 'FuelConsumptionController@formProcess');
+Route::post('/fuelConsumptionCalculator/form-process', 'FuelConsumptionController@formProcess');
 # Show the  form
 Route::get('/fuelConsumptionCalculator/show-form', 'FuelConsumptionController@showForm');
 #get the fuel Log

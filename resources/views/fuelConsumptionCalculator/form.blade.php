@@ -28,7 +28,8 @@
             </p>
         </div>
         <div class="col-sm-6">
-            <form method='GET' action='/fuelConsumptionCalculator/form-process'>
+                <form method='POST' action='/fuelConsumptionCalculator/form-process'>
+                    @csrf
                 <div class="form-group">
                     <i class="fas fa-tachometer-alt"></i><!--fontawesome kind of odometer icon-->
                     <label for="startDistance">Odometer reading - last fill-up </label>
